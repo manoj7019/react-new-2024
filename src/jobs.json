@@ -1,0 +1,88 @@
+{
+    "jobs" : [
+    {
+        "id": "1",
+        "title": "Senior web developer",
+        "type": "Full-time",
+        "description": "We are seeking a talented frontend developer to join our team in Boston, MA. We are seeking a talented frontend developer to join our team in Boston, MA. We are seeking a talented frontend developer to join our team in Boston, MA.",
+        "location": "Boston, MA",
+        "salary": "$70k - $80k",
+        "company": {
+            "name": "Newtek solutions",
+            "description": "Newtek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem.com",
+            "contactPhone": "555-555-5555"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Junior web developer",
+        "type": "Part-time",
+        "description": "We are seeking a talented frontend developer to join our team in Boston, MA. We are seeking a talented frontend developer to join our team in Boston, MA. We are seeking a talented frontend developer to join our team in Boston, MA.",
+        "location": "Boise, MA",
+        "salary": "$20k - $30k",
+        "company": {
+            "name": "Oldtek solutions",
+            "description": "Oldtek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem123.com",
+            "contactPhone": "555-666-5555"
+        }
+    },
+    {
+        "id": "3",
+        "title": "New web developer",
+        "type": "Full-time",
+        "description": "We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA.",
+        "location": "Angeles, LA",
+        "salary": "$40k - $50k",
+        "company": {
+            "name": "Middletek solutions",
+            "description": "Middletek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem321.com",
+            "contactPhone": "555-777-5555"
+        }
+    },
+    {
+        "id": "4",
+        "title": "Bloody web developer",
+        "type": "Any-time",
+        "description": "We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA.",
+        "location": "Angeles, LA",
+        "salary": "$100k - $500k",
+        "company": {
+            "name": "Hightek solutions",
+            "description": "Middletek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem321.com",
+            "contactPhone": "555-888-5555"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Crazy web developer",
+        "type": "Any-time",
+        "description": "We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA.",
+        "location": "Bangalore, India",
+        "salary": "$100k - $500k",
+        "company": {
+            "name": "HisOwn solutions",
+            "description": "Middletek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem321.com",
+            "contactPhone": "555-777-5555"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Legendary web developer",
+        "type": "Any-time",
+        "description": "We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA. We are seeking a talented new talented developer to join our team in Boston, MA.",
+        "location": "Bangalore, India",
+        "salary": "$400k - $500k",
+        "company": {
+            "name": "Middletek solutions",
+            "description": "Middletek solutions is the best company",
+            "contactEmail": "contact@ipsumlorem321.com",
+            "contactPhone": "555-999-5555"
+        }
+    }
+]
+}
