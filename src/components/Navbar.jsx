@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
-    const linkClass = ({isActive}) => isActive ? 'bg-black text-white laptop:rounded-full rounded px-4 py-0.5 mobile:py-0.5 rounded text-3xl' : 'hover:bg-blue-500 hover:text-white px-4 laptop:rounded-full py-0.5 mobile:rounded py-0.5 text-3xl' ;
+    const linkClass = ({isActive}) => isActive ? 'bg-black text-white laptop:rounded-full text-base px-4 py-0.5 mobile:py-0.5 rounded text-3xl' : 'hover:bg-blue-500 hover:text-white px-4 laptop:rounded-full text-base py-0.5 mobile:rounded py-0.5 text-3xl' ;
     
     function handleSetShowDropdown() {
         setShowDropdown(!showDropdown);

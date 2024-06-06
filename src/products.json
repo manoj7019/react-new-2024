@@ -3,77 +3,77 @@
         {
             "id": "personal-loan",
             "title": "Personal Loan",
-            "img": "../src/assets/images/personalLoan.png"
+            "img": "./src/assets/images/personalLoan.png"
         },
         {
             "id": "business-loan",
             "title": "Business Loan",
-            "img": "../src/assets/images/businessLoan.png"
+            "img": "./src/assets/images/businessLoan.png"
         },
         {
             "id": "home-loan",
             "title": "Home Loan",
-            "img": "../src/assets/images/homeLoan.png"
+            "img": "./src/assets/images/homeLoan.png"
         },
         {
             "id": "property-loan",
             "title": "Property Loan",
-            "img": "../src/assets/images/propertyLoan.png"
+            "img": "./src/assets/images/propertyLoan.png"
         },
         {
             "id": "educational-loan",
             "title": "Educational Loan",
-            "img": "../src/assets/images/educationalLoan.png"
+            "img": "./src/assets/images/educationalLoan.png"
         },
         {
             "id": "professional-loan",
             "title": "Professional Loan",
-            "img": "../src/assets/images/professionalLoan.png"
+            "img": "./src/assets/images/professionalLoan.png"
         },
         {
             "id": "two-wheeler-loan",
             "title": "Two Wheeler Loan",
-            "img": "../src/assets/images/TwoWheelerLoan.png"
+            "img": "./src/assets/images/TwoWheelerLoan.png"
         },
         {
             "id": "car-loan",
             "title": "Car Loan",
-            "img": "../src/assets/images/carLoan.png"
+            "img": "./src/assets/images/carLoan.png"
         },
         {
             "id": "electric-vehicle-loan",
             "title": "Electric Vehicle Loan",
-            "img": "../src/assets/images/eVLoan.png"
+            "img": "./src/assets/images/eVLoan.png"
         },
         {
             "id": "used-vehicle-loan",
             "title": "Used Vehicle Loan",
-            "img": "../src/assets/images/usedVehicleLoan.png"
+            "img": "./src/assets/images/usedVehicleLoan.png"
         },
         {
             "id": "overdraft-and-cash-credit",
             "title": "Overdraft and Cash Credit",
-            "img": "../src/assets/images/ODLoan.png"
+            "img": "./src/assets/images/ODLoan.png"
         },
         {
             "id": "commercial-vehicle-loan",
             "title": "Commercial Vehicle Loan",
-            "img": "../src/assets/images/commercialVehicleLoan.png"
+            "img": "./src/assets/images/commercialVehicleLoan.png"
         },
         {
             "id": "machinery-loan",
             "title": "Machinery Loan",
-            "img": "../src/assets/images/machineryLoan.png"
+            "img": "./src/assets/images/machineryLoan.png"
         },
         {
             "id": "balance-transfer-and-topup",
             "title": "Balance Transfer and Topup",
-            "img": "../src/assets/images/TopupLoan.png"
+            "img": "./src/assets/images/TopupLoan.png"
         },
         {
             "id": "credit-cards",
             "title": "Credit Cards",
-            "img": "../src/assets/images/creditCards.png"
+            "img": "./src/assets/images/creditCards.png"
         }
     ],
     "insurances" : [
