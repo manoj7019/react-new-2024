@@ -1,126 +1,66 @@
 import React from 'react'
-import logo from '../assets/images/sjlogo.png'
+import logoWhite from '../assets/images/sjLogoWhite.png'
 import { Link } from 'react-router-dom';
+import Product from '../products.json';
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
   return (
     <>
-        <div className='bg-black text-white flex justify-between gap-10 p-10 mt-10'>
+        <div className='bg-black text-white flex justify-between gap-10 p-10 mt-10 w-full'>
             <div className='flex flex-col flex-1 gap-5'>
                 <Link to='/'>
                     <img
-                    className='h-10 w-auto rounded'
-                    src={logo}
+                    className='laptop:h-10 w-auto
+                    mobile:w-26 h-auto'
+                    src={logoWhite}
                     />
                 </Link>
                 <p className=''>#971/30, MIG, 3rd Floor, 3rd Phase, A Sector, Yalahanka New Town, Bengaluru-560064</p>
             </div>
-            <div className='flex justify-between gap-20 border rounded-xl px-10 py-5'>
+            <div className='mobile:hidden laptop:flex justify-between gap-20 border rounded-xl px-10 py-5'>
                 <div className='flex flex-col'>
-                    <Link to='/'>
-                        <p className='font-extrabold text-2xl hover:underline'>Loans</p>
+                    <Link to='/loans'>
+                            <h2 className='text-2xl font-bold mb-1 hover:underline'>Loans</h2>
                     </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Personal Loan</p>
+                    {Product.loans.map(loan =>
+                    <Link to={`loan/${loan.id}`}>
+                        <p className='hover:underline'>{loan.title}</p>
                     </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Professional Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Home Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Educational Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>OD and CC Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Two wheeler Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Car Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>EV Vehicle Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Educational Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Commercial Vehicle Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Used Vehicle Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Machinery / Equipment Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Balance Transfer / Top-up Loan</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Credit Cards</p>
-                    </Link>
+                    )}
                 </div>
+
                 <div className='flex flex-col'>
-                    <Link to='/'>
-                        <p className='font-extrabold text-2xl hover:underline'>Insurance</p>
+                    <Link to='/insurance'>
+                            <h2 className='text-2xl font-bold mb-1 hover:underline'>Insurance</h2>
                     </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Health Insurance</p>
+                    {Product.insurances.map(insurance =>
+                    <Link to={`insurance/${insurance.id}`}>
+                        <p className='hover:underline'>{insurance.title}</p>
                     </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Life Insurance</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>General / Motor Insurance</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Travel Insurance</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Property Insurance</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Fire Insurance</p>
-                    </Link>
-                    <Link to='/'>
-                        <p className='hover:underline'>Home Insurance</p>
-                    </Link>
+                    )}
                 </div>
-                <div className='flex flex-col gap-5'>
-                    <div className=''>
-                        <Link to='/'>
-                            <p className='font-extrabold text-2xl hover:underline'>IT Services</p>
+
+                <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col'>
+                        <Link to='/itServices'>
+                            <h2 className='text-2xl font-bold mb-1 hover:underline'>IT Services</h2>
                         </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Web Development</p>
+                        {Product.itServices.map(itService =>
+                        <Link to={`itServices/${itService.id}`}>
+                            <p className='hover:underline'>{itService.title}</p>
                         </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>App Development</p>
-                        </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Digital Marketing</p>
-                        </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Graphic Designing</p>
-                        </Link>
+                        )}
                     </div>
-                    <div className=''>
-                        <Link to='/'>
-                            <p className='font-extrabold text-2xl hover:underline'>Real Estate</p>
+                    <div className='flex flex-col'>
+                        <Link to='/realEstate'>
+                            <h2 className='text-2xl font-bold mb-1 hover:underline'>Real Estate</h2>
                         </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Property Buy Support</p>
+                        {Product.realEstates.map(realEstate =>
+                        <Link to={`realEstate/${realEstate.id}`}>
+                            <p className='hover:underline'>{realEstate.title}</p>
                         </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Property Sell Support</p>
-                        </Link>
-                        <Link to='/'>
-                            <p className='hover:underline'>Property Development Support</p>
-                        </Link>
+                        )}
                     </div>
                 </div>
             </div>
@@ -129,7 +69,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-3">
                     <div className='flex gap-3'>
                         <Link to='/'>
-                            <SocialIcon className='border-4 border-blue-900 rounded-3xl' fallback= 'facebook'/>
+                            <SocialIcon className='h-5 w-5 border-4 border-blue-900 rounded-3xl' fallback= 'facebook'/>
                         </Link>
                         <Link to='/'>
                             <SocialIcon className='border-4 border-pink-500 rounded-3xl' fallback= 'instagram'/>

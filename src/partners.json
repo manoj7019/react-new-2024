@@ -1,0 +1,216 @@
+{
+    "primary" : [
+        {
+            "id": "rbl-bank",
+            "title": "RBL Bank",
+            "img": "/src/assets/partnerLogos/rbl.png"
+        },
+        {
+            "id": "yes-bank",
+            "title": "YES Bank",
+            "img": "/src/assets/partnerLogos/yesbank.png"
+        },
+        {
+            "id": "idfc-bank",
+            "title": "IDFC Bank",
+            "img": "/src/assets/partnerLogos/idfc.png"
+        },
+        {
+            "id": "aye-bank",
+            "title": "AYE Bank",
+            "img": "/src/assets/partnerLogos/aye.png"
+        },
+        {
+            "id": "bajaj-finserv",
+            "title": "Bajaj Finserv",
+            "img": "/src/assets/partnerLogos/bajajfin.png"
+        },
+        {
+            "id": "tata-capital",
+            "title": "Tata Capital",
+            "img": "/src/assets/partnerLogos/tata.png"
+        },
+        {
+            "id": "bandhan-bank",
+            "title": "Bandhan Bank",
+            "img": "/src/assets/partnerLogos/bandhan.png"
+        },
+        {
+            "id": "pnb-bank",
+            "title": "PNB Bank",
+            "img": "/src/assets/partnerLogos/pnb.png"
+        },
+        {
+            "id": "finnable-bank",
+            "title": "Finnable Bank",
+            "img": "/src/assets/partnerLogos/finnable.png"
+        },
+        {
+            "id": "indifi-bank",
+            "title": "Indifi Bank",
+            "img": "/src/assets/partnerLogos/indifi.png"
+        },
+        {
+            "id": "lending-kart",
+            "title": "Lending Kart",
+            "img": "/src/assets/partnerLogos/lendingkart.png"
+        },
+        {
+            "id": "lt-finance",
+            "title": "L&T Finance",
+            "img": "/src/assets/partnerLogos/ltfin.png"
+        }
+    ],
+    "secondary" : [
+        {
+            "id": "paysense",
+            "title": "Paysense",
+            "img": "/src/assets/partnerLogos/paysense.png"
+        },
+        {
+            "id": "my-shubh-life",
+            "title": "My Shubh Life",
+            "img": "/src/assets/partnerLogos/myshubhlife.png"
+        },
+        {
+            "id": "neo-growth",
+            "title": "Neo Growth",
+            "img": "/src/assets/partnerLogos/neogrowth.png"
+        },
+        {
+            "id": "protium",
+            "title": "Protium",
+            "img": "/src/assets/partnerLogos/protium.png"
+        },
+        {
+            "id": "sme-corner",
+            "title": "SME Corner",
+            "img": "/src/assets/partnerLogos/smecorner.png"
+        },
+        {
+            "id": "indusind-bank",
+            "title": "Indusind Bank",
+            "img": "/src/assets/partnerLogos/indusind.png"
+        },
+        {
+            "id": "faircent",
+            "title": "Faircent",
+            "img": "/src/assets/partnerLogos/faircent.png"
+        },
+        {
+            "id": "uco-bank",
+            "title": "UCO Bank",
+            "img": "/src/assets/partnerLogos/ucobank.png"
+        },
+        {
+            "id": "incred",
+            "title": "Incred",
+            "img": "/src/assets/partnerLogos/incred.png"
+        },
+        {
+            "id": "sbi",
+            "title": "SBI",
+            "img": "/src/assets/partnerLogos/sbi.png"
+        },
+        {
+            "id": "muthoot-finance",
+            "title": "Muthoot Finance",
+            "img": "/src/assets/partnerLogos/muthootFin.png"
+        },
+        {
+            "id": "ambit",
+            "title": "Ambit",
+            "img": "/src/assets/partnerLogos/ambit.jpeg"
+        },
+        {
+            "id": "ashv-finance",
+            "title": "Ashv Finance",
+            "img": "/src/assets/partnerLogos/ashv.png"
+        },
+        {
+            "id": "axis-bank",
+            "title": "Axis Bank",
+            "img": "/src/assets/partnerLogos/axis.png"
+        },
+        {
+            "id": "birla-capital",
+            "title": "Birla Capital",
+            "img": "/src/assets/partnerLogos/birla.png"
+        },
+        {
+            "id": "chola-fin",
+            "title": "Chola Finance",
+            "img": "/src/assets/partnerLogos/chola.png"
+        },
+        {
+            "id": "credilio",
+            "title": "Credilio",
+            "img": "/src/assets/partnerLogos/credilio.png"
+        },
+        {
+            "id": "fullerton",
+            "title": "Fullerton",
+            "img": "/src/assets/partnerLogos/Fullerton.png"
+        },
+        {
+            "id": "godrej-capital",
+            "title": "Godrej Capital",
+            "img": "/src/assets/partnerLogos/Godrej.jpg"
+        },
+        {
+            "id": "hero-fincorp",
+            "title": "Hero Fincorp",
+            "img": "/src/assets/partnerLogos/Herofincorp.png"
+        },
+        {
+            "id": "icici-bank",
+            "title": "ICICI Bank",
+            "img": "/src/assets/partnerLogos/ICICI.png"
+        },
+        {
+            "id": "india-bulls",
+            "title": "India Bulls",
+            "img": "/src/assets/partnerLogos/IndiaBulls.png"
+        },
+        {
+            "id": "werize",
+            "title": "Werize",
+            "img": "/src/assets/partnerLogos/werize.jpg"
+        },
+        {
+            "id": "kotak-bank",
+            "title": "Kotak Bank",
+            "img": "/src/assets/partnerLogos/Kotak.png"
+        },
+        {
+            "id": "piramal",
+            "title": "Piramal",
+            "img": "/src/assets/partnerLogos/piramal.png"
+        },
+        {
+            "id": "karur-vysya-bank",
+            "title": "Karur Vysya Bank",
+            "img": "/src/assets/partnerLogos/kvb.jpeg"
+        },
+        {
+            "id": "kuwy",
+            "title": "KUWY",
+            "img": "/src/assets/partnerLogos/kuwy.jpeg"
+        },
+        {
+            "id": "poonawalla-fincorp",
+            "title": "Poonawalla Fincorp",
+            "img": "/src/assets/partnerLogos/poonawala.png"
+        },
+        {
+            "id": "sundaram-home",
+            "title": "Sundaram Home",
+            "img": "/src/assets/partnerLogos/sundaram.png"
+        },
+        {
+            "id": "ujjivan-bank",
+            "title": "Ujjivan Bank",
+            "img": "/src/assets/partnerLogos/ujjivan.png"
+        }
+    ]
+}

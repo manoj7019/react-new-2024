@@ -9,34 +9,34 @@ import {Link} from 'react-router-dom';
 const HomeCards = () => {
     return (
     <>
-        <div className='flex-col m-4 p-4'>
+        <div className='flex-col mobile:m-2 p-0 laptop:m-20 p-4'>
             <h2 className='text-5xl font-bold my-10 text-center'>Our Services</h2>
-            <div className='flex justify-between'>
+            <div className='grid mobile:grid-cols-2 tablet:grid-cols-2 laptop:grid-cols-4'>
                 <Card>
                 <Link to='/loans'>
-                    <h3 className='text-2xl font-bold mb-1'>Loans</h3>
-                    <p>Get any loan approved asap!</p>
+                    <h3 className='mobile:text-base laptop:text-2xl font-bold mb-1'>Loans</h3>
+                    <p className='mobile:hidden'>Get any loan approved asap!</p>
                     <img src={LoansImage}/>
                 </Link>
                 </Card>
                 <Card>
                 <Link to='/insurance'>
-                    <h3 className='text-2xl font-bold mb-1'>Insurance</h3>
-                    <p>Insurance done in minutes.</p>
+                    <h3 className='mobile:text-base laptop:text-2xl font-bold mb-1'>Insurance</h3>
+                    <p className='mobile:hidden'>Insurance done in minutes.</p>
                     <img src={InsuranceImage}/>
                 </Link>
                 </Card>
                 <Card>
                 <Link to='/itServices'>
-                    <h3 className='text-2xl font-bold mb-1'>IT Services</h3>
-                    <p className=''>IT and marketign services at fingertip.</p>
+                    <h3 className='mobile:text-base laptop:text-2xl font-bold mb-1'>IT Services</h3>
+                    <p className='mobile:hidden'>IT and marketign services at fingertip.</p>
                     <img src={ItImage}/>
                 </Link>
                 </Card>
                 <Card>
                 <Link to='/realEstate'>
-                    <h3 className='text-2xl font-bold mb-1'>Real Estate</h3>
-                    <p className=''>Get Real estate support.</p>
+                    <h3 className='mobile:text-base laptop:text-2xl font-bold mb-1'>Real Estate</h3>
+                    <p className='mobile:hidden'>Get Real estate support.</p>
                     <img src={RealEstateImage}/>
                 </Link>
                 </Card>

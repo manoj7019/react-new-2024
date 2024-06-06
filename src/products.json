@@ -1,0 +1,160 @@
+{
+    "loans" : [
+        {
+            "id": "personal-loan",
+            "title": "Personal Loan",
+            "img": "/src/assets/images/personalLoan.png"
+        },
+        {
+            "id": "business-loan",
+            "title": "Business Loan",
+            "img": "/src/assets/images/businessLoan.png"
+        },
+        {
+            "id": "home-loan",
+            "title": "Home Loan",
+            "img": "/src/assets/images/homeLoan.png"
+        },
+        {
+            "id": "property-loan",
+            "title": "Property Loan",
+            "img": "/src/assets/images/propertyLoan.png"
+        },
+        {
+            "id": "educational-loan",
+            "title": "Educational Loan",
+            "img": "/src/assets/images/educationalLoan.png"
+        },
+        {
+            "id": "professional-loan",
+            "title": "Professional Loan",
+            "img": "/src/assets/images/professionalLoan.png"
+        },
+        {
+            "id": "two-wheeler-loan",
+            "title": "Two Wheeler Loan",
+            "img": "/src/assets/images/TwoWheelerLoan.png"
+        },
+        {
+            "id": "car-loan",
+            "title": "Car Loan",
+            "img": "/src/assets/images/carLoan.png"
+        },
+        {
+            "id": "electric-vehicle-loan",
+            "title": "Electric Vehicle Loan",
+            "img": "/src/assets/images/eVLoan.png"
+        },
+        {
+            "id": "used-vehicle-loan",
+            "title": "Used Vehicle Loan",
+            "img": "/src/assets/images/usedVehicleLoan.png"
+        },
+        {
+            "id": "overdraft-and-cash-credit",
+            "title": "Overdraft and Cash Credit",
+            "img": "/src/assets/images/ODLoan.png"
+        },
+        {
+            "id": "commercial-vehicle-loan",
+            "title": "Commercial Vehicle Loan",
+            "img": "/src/assets/images/commercialVehicleLoan.png"
+        },
+        {
+            "id": "machinery-loan",
+            "title": "Machinery Loan",
+            "img": "/src/assets/images/machineryLoan.png"
+        },
+        {
+            "id": "balance-transfer-and-topup",
+            "title": "Balance Transfer and Topup",
+            "img": "/src/assets/images/TopupLoan.png"
+        },
+        {
+            "id": "credit-cards",
+            "title": "Credit Cards",
+            "img": "/src/assets/images/creditCards.png"
+        }
+    ],
+    "insurances" : [
+        {
+            "id": "health-insurance",
+            "title": "Health Insurance",
+            "img": "/src/assets/images/healthInsurance.png"
+        },
+        {
+            "id": "life-insurance",
+            "title": "Life Insurance",
+            "img": "/src/assets/images/lifeInsurance.png"
+        },
+        {
+            "id": "general-insurance",
+            "title": "General / Motor Insurance",
+            "img": "/src/assets/images/motorInsurance.png"
+        },
+        {
+            "id": "company-insurance",
+            "title": "Company / Group Insurance",
+            "img": "/src/assets/images/companyInsurance.png"
+        },
+        {
+            "id": "home-insurance",
+            "title": "Home Insurance",
+            "img": "/src/assets/images/HomeInsurance.png"
+        },
+        {
+            "id": "travel-insurance",
+            "title": "Travel Insurance",
+            "img": "/src/assets/images/travelInsurance.png"
+        },
+        {
+            "id": "property-insurance",
+            "title": "Property Insurance",
+            "img": "/src/assets/images/propertyInsurance.png"
+        },
+        {
+            "id": "fire-insurance",
+            "title": "Fire Insurance",
+            "img": "/src/assets/images/fireInsurance.png"
+        }
+    ],
+    "itServices" : [
+        {
+            "id": "web-development",
+            "title": "Web Development",
+            "img": "/src/assets/images/webDev.png"
+        },
+        {
+            "id": "app-development",
+            "title": "App Development",
+            "img": "/src/assets/images/appDev.png"
+        },
+        {
+            "id": "digital-marketing",
+            "title": "Digital Marketing",
+            "img": "/src/assets/images/digitalMarketing.png"
+        },
+        {
+            "id": "graphic-designing",
+            "title": "Graphic Designing",
+            "img": "/src/assets/images/graphicDesign.png"
+        }
+    ],
+    "realEstates" : [
+        {
+            "id": "property-buy-support",
+            "title": "Property Buy Support",
+            "img": "/src/assets/images/propertyBuy.png"
+        },
+        {
+            "id": "property-sell-support",
+            "title": "Property Sell Support",
+            "img": "/src/assets/images/propertySell.png"
+        },
+        {
+            "id": "property-dev-support",
+            "title": "Property Development Support",
+            "img": "/src/assets/images/propertyDev.png"
+        }
+    ]
+}
