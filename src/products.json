@@ -3,17 +3,17 @@
         {
             "id": "personal-loan",
             "title": "Personal Loan",
-            "img": "./src/assets/images/personalLoan.png"
+            "img": "/images/personalLoan.png"
         },
         {
             "id": "business-loan",
             "title": "Business Loan",
-            "img": "./src/assets/images/businessLoan.png"
+            "img": "/images/businessLoan.png"
         },
         {
             "id": "home-loan",
             "title": "Home Loan",
-            "img": "./src/assets/images/homeLoan.png"
+            "img": "/images/homeLoan.png"
         },
         {
             "id": "property-loan",

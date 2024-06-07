@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/sjlogo.png';
 import menuIcon from '../assets/images/menuIcon.png';
+import closeIcon from '../assets/images/closeIcon.png';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='laptop:flex justify-between items-center mx-4 laptop:my-3 p-2 mobile:flex my-[-3%]'>
+      <div className='fixed inset-x-0 z-50 bg-white top-0 laptop:flex justify-between items-center laptop:my-0 px-20 laptop:py-4 mobile:flex my-[-3%] mobile:py-0 mobile:px-6 mobile:pt-1 tablet:my-0 '>
 
             <NavLink className='shrink-0' to='/'>
                 <img 
@@ -43,18 +44,18 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center'>
-                <button className='phone:hidden laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500' type='button' >Become a partner</button>
+                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 phone:hidden tablet:hidden' type='button'>Become a partner</button>
 
                 <img 
                     className='h-6 w-auto cursor-pointer laptop:hidden' 
-                    src={menuIcon} 
+                    src={showDropdown ? `${closeIcon}` : `${menuIcon}`} 
                     onClick={handleSetShowDropdown}
                 />
             </div>
 
             {showDropdown && 
-            <div className='laptop:hidden mobile:absolute min-h-[100vh] left-0 top-[8%] w-full px-1'>
-                <div className='flex flex-col flex-8 justify-between bg-gray-50 gap-6 px-5 py-5 rounded-lg z-100'>
+            <div className='laptop:hidden mobile:absolute min-h-[100vh] left-0 top-[100%] w-full px-1'>
+                <div className='flex flex-col flex-8 justify-between bg-gray-50 gap-6 px-5 py-5 rounded-lg z-50'>
                     <NavLink onClick={handleSetShowDropdown} to='/loans' className={linkClass}>
                         Loans
                     </NavLink>

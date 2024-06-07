@@ -9,8 +9,8 @@ import {Link} from 'react-router-dom';
 const HomeCards = () => {
     return (
     <>
-        <div className='flex-col mobile:m-2 p-0 laptop:m-20 p-4'>
-            <h2 className='text-5xl font-bold my-10 text-center'>Our Services</h2>
+        <div className='flex-col mobile:m-1 mobile:p-0 laptop:m-10 p-4'>
+            <h2 className='laptop:text-5xl font-bold my-10 text-center mobile:text-3xl'>Our Services</h2>
             <div className='grid mobile:grid-cols-2 tablet:grid-cols-2 laptop:grid-cols-4'>
                 <Card>
                 <Link to='/loans'>

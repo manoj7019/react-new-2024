@@ -8,7 +8,7 @@ const RealEstateCards = () => {
     <>
         <div className='flex-col my-10 mobile:mx-2 mx-10'>
 
-            <h2 className='text-5xl font-bold my-10 text-center'>Real Estate</h2>
+            <h2 className='text-5xl font-bold my-24 mb-6 text-center mobile:text-3xl my-18 mb-3'>Real Estate</h2>
             {/* <p className='text-xl text-center mb-10'>Click on the type of service below, fill the form and get approved.</p> */}
             <div className='grid laptop:grid-cols-5
             tablet:grid-cols-3
