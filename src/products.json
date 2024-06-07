@@ -3,12 +3,12 @@
         {
             "id": "personal-loan",
             "title": "Personal Loan",
-            "img": "/images/personalLoan.png"
+            "img": "./images/personalLoan.png"
         },
         {
             "id": "business-loan",
             "title": "Business Loan",
-            "img": "/images/businessLoan.png"
+            "img": "./images/businessLoan.png"
         },
         {
             "id": "home-loan",
