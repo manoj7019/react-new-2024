@@ -5,7 +5,7 @@ const Hero = ({title = 'Get instant loan within a minute!', subtitle = 'Click th
     return (
         <div>
         <>
-            <div className='mobile:flex flex-col mobile:my-12 mx-2 laptop:flex-row justify-between my-20 mx-4 gap-10'>
+            <div className='mobile:flex flex-col mobile:my-12 mx-2 laptop:flex-row justify-between laptop:my-32 mx-4 gap-10'>
                 <div className='flex-col p-4 m-4 mobile:m-0 mobile:mt-5'>
                     <h1 className='mobile:text-4xl laptop:text-8xl font-bold'>{ title }</h1>
                     <p className='text-2xl my-6 mr-10'>{ subtitle }</p>

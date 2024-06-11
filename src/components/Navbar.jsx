@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='fixed inset-x-0 z-50 bg-white top-0 laptop:flex justify-between items-center laptop:my-0 px-20 laptop:py-4 mobile:flex my-[-3%] mobile:py-0 mobile:px-6 mobile:pt-1 tablet:my-0 '>
+      <div className='fixed inset-x-0 z-50 bg-white top-0 laptop:flex justify-between items-center laptop:my-0 px-20 laptop:py-4 mobile:flex my-[-3%] mobile:py-0 mobile:px-6 mobile:pt-1 tablet:my-0 tablet:py-2'>
 
             <NavLink className='shrink-0' to='/'>
                 <img 
@@ -44,7 +44,7 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center'>
-                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 phone:hidden tablet:hidden' type='button'>Become a partner</button>
+                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 phone:hidden' type='button'>Become a partner</button>
 
                 <img 
                     className='h-6 w-auto cursor-pointer laptop:hidden' 

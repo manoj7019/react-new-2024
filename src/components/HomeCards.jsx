@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from '../components/Card';
-import LoansImage from '../assets/images/loans.png';
-import InsuranceImage from '../assets/images/insurance.png';
-import ItImage from '../assets/images/itServices.png';
-import RealEstateImage from '../assets/images/realEstate.png';
+import LoansImage from '/loans.png';
+import InsuranceImage from '/insurance.png';
+import ItImage from '/itServices.png';
+import RealEstateImage from '/realEstate.png';
 import {Link} from 'react-router-dom';
 
 const HomeCards = () => {
