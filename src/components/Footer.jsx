@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <>
         <div className='bg-black text-white flex laptop:flex-row justify-between laptop:items-start laptop:text-left gap-10 p-10 mt-10 w-full mobile:flex-col mobile:pt-5 laptop:pt-10 items-center text-center'>
-            <div className='flex flex-col flex-1 gap-5'>
+            <div className='flex flex-col flex-1 gap-5 mobile:items-center laptop:items-start'>
                 <Link to='/'>
                     <img
                     className='laptop:h-10 w-auto
-                    mobile:w-26 h-auto'
+                    mobile:w-44 h-auto'
                     src={logoWhite}
                     />
                 </Link>
@@ -82,10 +82,10 @@ const Footer = () => {
                         <Link to='mailto: support@sjfintech.in'>
                             <SocialIcon className='border-4 border-gray-500 rounded-3xl' fallback= 'email'/>
                         </Link>
-                        <Link to='https://wa.me/919901149514'>
+                        <Link to='https://wa.me/919620681868'>
                             <SocialIcon className='border-4 border-green-500 rounded-3xl' fallback= 'whatsapp'/>
                         </Link>
-                        <Link to='tel:+919901149514'>
+                        <Link to='tel:+919620681868'>
                             <SocialIcon className='border-4 border-blue-500 rounded-3xl' fallback= 'telegram'/>
                         </Link>
                     </div>

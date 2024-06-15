@@ -10,7 +10,6 @@ const NotFoundPage = () => {
             <h1 className='text-3xl font-bold'>Cummming Sooooon!!</h1>
             <img src={ComingSoonImage}/>
             <Link to='/' className=''>
-
             </Link>
         </div>
     </>
