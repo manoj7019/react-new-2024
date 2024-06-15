@@ -1,13 +1,10 @@
 import React from 'react'
 import Card from '../components/Card';
 import Service from '../services.json';
-import LoansImage from '/loans.png';
-import InsuranceImage from '/insurance.png';
-import ItImage from '/itServices.png';
-import RealEstateImage from '/realEstate.png';
 import {Link} from 'react-router-dom';
 
 const HomeCards = () => {
+    
     return (
     <>
         <div className='flex-col mobile:m-1 mobile:p-0 laptop:m-10 p-4'>

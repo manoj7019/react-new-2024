@@ -7,25 +7,14 @@ import Loader from '../components/Loader';
 import ScrollToTop from '../components/ScrollToTop';
 
 const MainLayout = () => {
-    const[isLoading, setIsLoading] = useState(true);
-
-    const handleLoading = () => {
-        setIsLoading(false);
-    }
-
-    useEffect(() =>{
-        window.addEventListener('load', handleLoading);
-        return () => window.removeEventListener('load', handleLoading);
-    }, []);
-
-    return !isLoading ? (
+    return (
         <div>
             <ScrollToTop/>
             <Navbar />
             <Outlet />
             <Footer />
         </div>
-    ) : (<Loader />)
+    )
 }
 
 export default MainLayout
