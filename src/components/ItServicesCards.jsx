@@ -14,7 +14,7 @@ const ItServicesCards = () => {
             tablet:grid-cols-3
             mobile:grid-cols-2'>
             {Product.itServices.map(itService =>
-                <Card>
+                <Card key={itService.id}>
                     <Link to={`/itService/${itService.id}`}>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-xl mobile:text-base font-bold mb-1' key={itService.title}>{itService.title}</h3>

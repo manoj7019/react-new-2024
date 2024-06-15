@@ -14,7 +14,7 @@ const RealEstateCards = () => {
             tablet:grid-cols-3
             mobile:grid-cols-2'>
             {Product.realEstates.map(realEstate =>
-                <Card>
+                <Card key={realEstate.id}>
                     <Link to={`/realEstate/${realEstate.id}`}>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-xl mobile:text-base font-bold mb-1' key={realEstate.title}>{realEstate.title}</h3>

@@ -1,21 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/sjlogo.png';
-import menuIcon from '../assets/images/menuIcon.png';
-import closeIcon from '../assets/images/closeIcon.png';
+import menuIcon from '/menuIcon.png';
+import closeIcon from '/closeIcon.png';
 import { useState } from 'react';
 
 const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const linkClass = ({isActive}) => isActive ? 'bg-black text-white laptop:rounded-full text-base px-4 py-0.5 mobile:py-0.5 rounded text-3xl' : 'hover:bg-blue-500 hover:text-white px-4 laptop:rounded-full text-base py-0.5 mobile:rounded py-0.5 text-3xl' ;
+
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    useEffect(() => {
+        if(window.innerWidth > 1100) {
+            setIsDesktop(true);
+        } else {
+            setIsDesktop(false);
+        }
     
+
+    const updateMedia = () => {
+        if(window.innerWidth > 1100) {
+            setIsDesktop(true);
+        } else {
+            setIsDesktop(false);
+        } 
+    }
+
+        window.addEventListener('resize', updateMedia);
+        return () => window.removeEventListener('resize', updateMedia)
+    }, [])
+
     function handleSetShowDropdown() {
         setShowDropdown(!showDropdown);
     }
 
   return (
     <>
-      <div className='fixed inset-x-0 z-50 bg-white top-0 laptop:flex justify-between items-center laptop:my-0 px-20 laptop:py-4 mobile:flex my-[-3%] mobile:py-0 mobile:px-6 mobile:pt-1 tablet:my-0 tablet:py-2'>
+      <div className='fixed inset-x-0 z-50 bg-white top-0 laptop:flex justify-between items-center laptop:my-0 px-20 laptop:py-4 mobile:flex my-0 mobile:py-3 mobile:px-6 tablet:my-0 tablet:py-2'>
 
             <NavLink className='shrink-0' to='/'>
                 <img 
@@ -44,13 +66,16 @@ const Navbar = () => {
             </div>
 
             <div className='flex items-center'>
-                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 phone:hidden' type='button'>Become a partner</button>
-
+                
+                {isDesktop ? 
+                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' type='button'>Become a partner</button>
+                    :
                 <img 
                     className='h-6 w-auto cursor-pointer laptop:hidden' 
                     src={showDropdown ? `${closeIcon}` : `${menuIcon}`} 
                     onClick={handleSetShowDropdown}
                 />
+                }               
             </div>
 
             {showDropdown && 
