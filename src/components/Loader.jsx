@@ -3,7 +3,7 @@ import BarLoader from 'react-spinners/BarLoader';
 
 const override = {
     display: 'block',
-    margin: '100px auto'
+    margin: '300px auto'
 }
 
 const Loader = ({loading}) => {

@@ -1,0 +1,28 @@
+{
+    "services" : [
+        {
+            "id" : "loan",
+            "title" : "Loans",
+            "para" : "Explore Loans",
+            "img" : "/loans.png"
+        },
+        {
+            "id" : "insurance",
+            "title" : "Insurance",
+            "para" : "Explore Loans",
+            "img" : "/insurance.png"
+        },
+        {
+            "id" : "it-services",
+            "title" : "IT Services",
+            "para" : "Explore Loans",
+            "img" : "/itServices.png"
+        },
+        {
+            "id" : "real-estate",
+            "title" : "Real Estate",
+            "para" : "Explore Loans",
+            "img" : "/realEstate.png"
+        }
+    ]
+}

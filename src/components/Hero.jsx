@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../assets/images/heroImage.png';
+import HeroImage from '/heroImage.png';
 
 const Hero = ({title = 'Get instant loan within a minute!', subtitle = 'Click the button below, select the loan, fill the form and get approved for a loan immediately.'}) => {
     return (
