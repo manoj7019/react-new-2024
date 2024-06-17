@@ -1,10 +1,12 @@
 import React from 'react'
-import Form from '../components/Form'
+import LoanDetailsForm from '../components/LoanDetailsForm'
+import LoanDocuments from '../components/LoanDocuments'
 
 const FormPage = () => {
   return (
     <div>
-      <Form />
+      <LoanDetailsForm />
+      <LoanDocuments />
     </div>
   )
 }

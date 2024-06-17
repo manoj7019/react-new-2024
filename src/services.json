@@ -1,7 +1,7 @@
 {
     "services" : [
         {
-            "id" : "loan",
+            "id" : "loans",
             "title" : "Loans",
             "para" : "Explore Loans",
             "img" : "/loans.png"
@@ -13,13 +13,13 @@
             "img" : "/insurance.png"
         },
         {
-            "id" : "it-services",
+            "id" : "itServices",
             "title" : "IT Services",
             "para" : "Explore Loans",
             "img" : "/itServices.png"
         },
         {
-            "id" : "real-estate",
+            "id" : "realEstate",
             "title" : "Real Estate",
             "para" : "Explore Loans",
             "img" : "/realEstate.png"

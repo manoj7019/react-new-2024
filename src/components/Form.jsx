@@ -86,9 +86,9 @@ const Form = () => {
     function handleResidentialPincodeChange(e) {
         setResidentialPincode(e.target.value);
     }
-    function handleAadharFrontChange(e) {
-        setAadharFront(URL.createObjectURL(e.target.files[0]));
-    }
+    // function handleAadharFrontChange(e) {
+    //     setAadharFront(URL.createObjectURL(e.target.files[0]));
+    // }
     function handleAadharBackChange(e) {
         setAadharBack(URL.createObjectURL(e.target.files[0]));
     }
@@ -133,16 +133,16 @@ const Form = () => {
 
     return (
         <>
-        <div className='flex flex-col justify-between gap-20 laptop:mt-20 mobile:mt-20 w-full'>
+        <div className='flex flex-col justify-between gap-20 laptop:mt-20 mobile:m-0 w-full'>
             <form onSubmit={handleKYCSubmit} method='POST'>
                 <div className='flex justify-between items-center m-5'>
-                    <h1 onClick={handleShowKYC} className='cursor-pointer laptop:text-3xl mobile:text-xl font-bold'><u>Personal Details</u></h1>
-                    {/* <div> */}
-                    {showKYC ? <button onClick={handleShowKYC} className='bg-blue-500 text-white text-xl px-4 rounded ml-20'> - </button>
-                    : <button onClick={handleShowKYC} className='bg-blue-500 text-white text-xl px-4 rounded ml-28'> + </button>}
-                    {/* {showKYC ? ''
-                    : <button onClick={handleEdit} className='bg-black text-white px-4 py-1 rounded ml-2'> Edit </button>} */}
-                    {/* </div> */}
+                    <h1 className='text-3xl font-bold'>Personal Details</h1>
+                    <div>
+                    {showKYC ? <button onClick={handleShowKYC} className='bg-red-500 text-white text-xl px-4 rounded ml-20'> - </button>
+                    : <button onClick={handleShowKYC} className='bg-red-500 text-white text-xl px-4 rounded ml-28'> + </button>}
+                    {showKYC ? ''
+                    : <button onClick={handleEdit} className='bg-black text-white px-4 py-1 rounded ml-2'> Edit </button>}
+                    </div>
                 </div>
 
                 {showKYC &&
@@ -153,7 +153,7 @@ const Form = () => {
                                 className='my-2 p-2 border border-black'
                                 placeholder='Name as per Aadhar'
                                 name='fullName'
-                                value={fullName}
+                                value={user.fullName}
                                 id='userFullName'
                                 onChange={handleFullNameChange}
                             />
@@ -164,7 +164,7 @@ const Form = () => {
                                 className='my-2 p-2 border border-black'
                                 placeholder='Email'
                                 name='email'
-                                value={email}
+                                value={user.email}
                                 id='userEmail'
                                 onChange={handleEmailChange}
                             />
@@ -175,7 +175,7 @@ const Form = () => {
                                 className='my-2 p-2 border border-black'
                                 placeholder='Phone number'
                                 name='phone'
-                                value={phone}
+                                value={user.phone}
                                 id='userPhone'
                                 onChange={handlePhoneChange}
                             />
@@ -201,7 +201,7 @@ const Form = () => {
                                 className='my-2 p-2 border border-black'
                                 placeholder='Date of Birth'
                                 name='dOB'
-                                value={dOB}
+                                value={user.dOB}
                                 type='date'
                                 id='userDOB'
                                 onChange={handleDOBChange}
@@ -225,6 +225,7 @@ const Form = () => {
                             <input
                                 className='my-2 p-1.5 border border-black'
                                 type='file'
+                                value={user.aadharFront}
                                 name='aadharFront'
                                 id='aadharFront'
                                 onChange={handleAadharFrontChange}
@@ -415,9 +416,9 @@ const Form = () => {
                             />
                         </div>
 
-                        <Link to='/success' >
+                        <Link to='/output' >
                         <button
-                        className='bg-blue-500 py-2 px-6 my-5 text-white rounded'
+                        className='bg-red-500 py-2 px-6 my-5 text-white rounded'
                         onClick ={() => {handleKYCSubmit(); handleEdit();}}
                         > Submit
                         </button>
@@ -426,7 +427,7 @@ const Form = () => {
                 }
             </form>
 
-            <div className='hidden flex flex-col items-center gap-4 m-5'>
+            <div className='flex flex-col items-center gap-4'>
                 <h1>{fullName}</h1>
                 <h1>{email}</h1>
                 <h1>{phone}</h1>
@@ -453,3 +454,5 @@ const Form = () => {
     }
 
 export default Form
+
+

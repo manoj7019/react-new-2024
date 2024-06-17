@@ -12,7 +12,7 @@ const HomeCards = () => {
             <div className='grid mobile:grid-cols-2 mobile:gap-0 tablet:grid-cols-2 laptop:grid-cols-4'>
                 {Service.services.map(service => 
                     <Card key={service.id}>
-                    <Link to='/loans'>
+                    <Link to={`/${service.id}`}>
                         <h3 className='mobile:text-base laptop:text-2xl font-bold mb-1'>{service.title}</h3>
                         <p className='mobile:hidden tablet:text-xl laptop:text-xl m-2'>{service.para}</p>
                         <img className='transition-all' src={service.img}/>
