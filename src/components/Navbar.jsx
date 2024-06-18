@@ -4,6 +4,7 @@ import logo from '../assets/images/sjlogo.png';
 import menuIcon from '/menuIcon.png';
 import closeIcon from '/closeIcon.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -51,6 +52,9 @@ const Navbar = () => {
                 <NavLink to='/loans' className={linkClass}>
                     Loans
                 </NavLink>
+                <NavLink to='*' className={linkClass}>
+                    CIBIL Correction
+                </NavLink>
                 <NavLink to='/insurance' className={linkClass}>
                     Insurance
                 </NavLink>
@@ -68,7 +72,9 @@ const Navbar = () => {
             <div className='flex items-center'>
                 
                 {isDesktop ? 
-                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' type='button'>Become a partner</button>
+                <Link to='*'>
+                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' type='button'>Sign In</button>
+                </Link>
                     :
                 <img 
                     className='h-6 w-auto cursor-pointer laptop:hidden' 
@@ -84,6 +90,9 @@ const Navbar = () => {
                     <NavLink onClick={handleSetShowDropdown} to='/loans' className={linkClass}>
                         Loans
                     </NavLink>
+                    <NavLink onClick={handleSetShowDropdown} to='*' className={linkClass}>
+                        CIBIL Correction
+                    </NavLink>
                     <NavLink onClick={handleSetShowDropdown} to='/insurance' className={linkClass}>
                         Insurance
                     </NavLink>
@@ -96,8 +105,8 @@ const Navbar = () => {
                     <NavLink onClick={handleSetShowDropdown} to='/contact' className={linkClass}>
                         Contact Us
                     </NavLink>
-                    <NavLink onClick={handleSetShowDropdown} to='/' className={linkClass}>
-                        Become a partner
+                    <NavLink onClick={handleSetShowDropdown} to='*' className={linkClass}>
+                        Sign In
                     </NavLink>
                 </div>
             </div>

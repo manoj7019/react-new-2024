@@ -7,6 +7,12 @@
             "img" : "/loans.png"
         },
         {
+            "id" : "cibilCorrection",
+            "title" : "CIBIL Correction",
+            "para" : "Explore Cibil Correction",
+            "img" : "/cibilCorrection.png"
+        },
+        {
             "id" : "insurance",
             "title" : "Insurance",
             "para" : "Explore Loans",

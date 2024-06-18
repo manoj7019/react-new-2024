@@ -15,6 +15,7 @@ import ContactPage from '../src/pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage';
 import FormPage from './pages/FormPage';
 import SuccessPage from './pages/SuccessPage';
+import GetInTouchPage from './pages/GetInTouchPage';
 
 const router = createBrowserRouter (
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter (
     <Route path='/realEstate' element={<RealEstatePage/>}/>
     <Route path='/contact' element={<ContactPage/>}/>
     <Route path='/form' element={<FormPage/>}/>
+    <Route path='/getInTouch' element={<GetInTouchPage/>}/>
     <Route path='/success' element={<SuccessPage/>}/>
     <Route path='*' element={<NotFoundPage/>}/>
   </Route>

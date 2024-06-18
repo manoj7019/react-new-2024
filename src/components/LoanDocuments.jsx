@@ -26,7 +26,7 @@ const LoanDocuments = () => {
     const uploadAadharFront = () => {
         if(aadharFrontUpload == null)
         return;
-        const imageRef = ref(storage, `loanDocuments/AadharFront ${nameOnAadhar + v4()}`)
+        const imageRef = ref(storage, `loanDocuments/${nameOnAadhar}/AadharFront ${nameOnAadhar + v4()}`)
         uploadBytes(imageRef, aadharFrontUpload).then(() => {
             alert('Aadhar Card Front Uploaded!')
         })

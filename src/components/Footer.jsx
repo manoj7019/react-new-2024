@@ -16,7 +16,7 @@ const Footer = () => {
                     src={logoWhite}
                     />
                 </Link>
-                <p className=''>#971/30, MIG, 3rd Floor, 3rd Phase, A Sector, Yalahanka New Town, Bengaluru-560064</p>
+                <p className=''>971/3, 3rd Floor, A sector, 3rd Phase, 13th cross, Opp to KHB High Rise Apartment, Yelahanka , Bengaluru Urban, Karnataka - 560064</p>
             </div>
             <div className='mobile:hidden laptop:flex justify-between gap-20 border rounded-xl px-10 py-5'>
                 <div className='flex flex-col'>
@@ -24,7 +24,7 @@ const Footer = () => {
                             <h2 className='text-2xl font-bold mb-1 hover:underline'>Loans</h2>
                     </Link>
                     {Product.loans.map(loan =>
-                    <Link to={`loan/${loan.id}`}>
+                    <Link to='/form'>
                         <p key={loan.id} className='hover:underline'>{loan.title}</p>
                     </Link>
                     )}
@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
         </div>
         <div>
-            <h1 className='bg-black text-white mobile:text-xs laptop:text-base text-center p-2'>Copright &#169; S J Financial Services and Consultancy PVT. LTD.</h1>
+            <h1 className='bg-black text-white mobile:text-xs laptop:text-base text-center p-2'>Copright &#169; 2024 S J Financial Services and Consultancy.</h1>
         </div>
     </>
   )

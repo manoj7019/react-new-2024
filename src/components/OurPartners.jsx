@@ -20,12 +20,13 @@ const OurPartners = () => {
                 mobile:grid-cols-3 mobile:gap-5 mobile:m-5
                 tablet:grid-cols-4 tablet:gap-8 tablet:m-10'>
                 {Partners.primary.map(primaryPartner =>
-                <img 
-                    className='
-                    laptop:h-auto w-36'
-                    src={primaryPartner.img}
-                    key={primaryPartner.id}
-                />
+                <Link to='*'>
+                    <img 
+                        className='laptop:h-auto w-36'
+                        src={primaryPartner.img}
+                        key={primaryPartner.id}
+                    />
+                </Link>
                 )}
             </div>
             
@@ -37,11 +38,13 @@ const OurPartners = () => {
                     mobile:grid-cols-3 mobile:gap-5 mobile:mt-0 m-5
                     tablet:grid-cols-4 tablet:gap-8 tablet:mt-0 m-5'>
                     {Partners.secondary.map(secondaryPartner =>
-                    <img 
-                        className='h-auto w-36'
-                        src={secondaryPartner.img}
-                        key={secondaryPartner.id}
-                    />
+                    <Link to='*'>
+                        <img 
+                            className='h-auto w-36'
+                            src={secondaryPartner.img}
+                            key={secondaryPartner.id}
+                        />
+                    </Link>
                     )}
                 </div>
             </>
