@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const linkClass = ({isActive}) => isActive ? 'bg-black text-white laptop:rounded-full text-base px-4 py-0.5 mobile:py-0.5 rounded text-3xl' : 'hover:bg-blue-500 hover:text-white px-4 laptop:rounded-full text-base py-0.5 mobile:rounded py-0.5 text-3xl' ;
+    const partnerClass =  ({isActive}) => isActive ? 'laptop:bg-white text-blue-500 text-xl px-8 py-2 rounded-full border-2 border-blue-500 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' : 'laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' ;
 
     const [isDesktop, setIsDesktop] = useState(false);
 
@@ -72,9 +73,9 @@ const Navbar = () => {
             <div className='flex items-center'>
                 
                 {isDesktop ? 
-                <Link to='*'>
-                <button className='laptop:bg-blue-500 text-white text-xl px-8 py-2 rounded-full hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500' type='button'>Sign In</button>
-                </Link>
+                <NavLink to='/becomeAPartner' className={partnerClass} type='button'>
+                    Become a partner
+                </NavLink>
                     :
                 <img 
                     className='h-6 w-auto cursor-pointer laptop:hidden' 
@@ -90,7 +91,7 @@ const Navbar = () => {
                     <NavLink onClick={handleSetShowDropdown} to='/loans' className={linkClass}>
                         Loans
                     </NavLink>
-                    <NavLink onClick={handleSetShowDropdown} to='*' className={linkClass}>
+                    <NavLink onClick={handleSetShowDropdown} to='/' className={linkClass}>
                         CIBIL Correction
                     </NavLink>
                     <NavLink onClick={handleSetShowDropdown} to='/insurance' className={linkClass}>
@@ -101,6 +102,9 @@ const Navbar = () => {
                     </NavLink>
                     <NavLink onClick={handleSetShowDropdown} to='/realEstate' className={linkClass}>
                         Real Estate
+                    </NavLink>
+                    <NavLink onClick={handleSetShowDropdown} to='/becomeAPartner' className={linkClass}>
+                        Become a partner
                     </NavLink>
                     <NavLink onClick={handleSetShowDropdown} to='/contact' className={linkClass}>
                         Contact Us
