@@ -36,11 +36,11 @@ const GetInTouchForm = () => {
           })
       }
       const res = await fetch(
-          'https://upload-file-to-db-default-rtdb.firebaseio.com/GetInTouch.json',
+          'https://sj-fintech-157c2-default-rtdb.firebaseio.com/GetInTouch.json',
           options
       )
       if(res) {
-          alert('Query submitted!')
+          alert('Message sent!')
       } else {
           alert('Error occured')
       }
@@ -87,7 +87,6 @@ const GetInTouchForm = () => {
                 onChange={data} required>
               </textarea>
             </div>
-          
 
             <div className='flex'>
               <Link to='/success'>

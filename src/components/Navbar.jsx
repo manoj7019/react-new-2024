@@ -48,12 +48,11 @@ const Navbar = () => {
                 />
             </NavLink>
 
-
             <div className='mobile:hidden laptop:flex flex-8 justify-between top-0 bg-gray-50 gap-5 px-10 py-2 rounded-3xl'>
                 <NavLink to='/loans' className={linkClass}>
                     Loans
                 </NavLink>
-                <NavLink to='*' className={linkClass}>
+                <NavLink to='/form' className={linkClass}>
                     CIBIL Correction
                 </NavLink>
                 <NavLink to='/insurance' className={linkClass}>
@@ -65,9 +64,9 @@ const Navbar = () => {
                 <NavLink to='/realEstate' className={linkClass}>
                     Real Estate
                 </NavLink>
-                <NavLink to='/contact' className={linkClass}>
+                {/* <NavLink to='/contact' className={linkClass}>
                     Contact Us
-                </NavLink>
+                </NavLink> */}
             </div>
 
             <div className='flex items-center'>

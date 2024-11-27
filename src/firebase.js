@@ -6,12 +6,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAt8BO-_fdOIGFDaQiA6BB2JWj5g5WREXw",
-  authDomain: "upload-file-to-db.firebaseapp.com",
-  projectId: "upload-file-to-db",
-  storageBucket: "upload-file-to-db.appspot.com",
-  messagingSenderId: "276825054271",
-  appId: "1:276825054271:web:d2c9a4b3d84dc3c94c6c8a"
+  apiKey: "AIzaSyBKJj5QAma_uGPluUBZT54TasLqzh_07D4",
+  authDomain: "sj-fintech-157c2.firebaseapp.com",
+  projectId: "sj-fintech-157c2",
+  storageBucket: "sj-fintech-157c2.firebasestorage.app",
+  messagingSenderId: "673670576947",
+  appId: "1:673670576947:web:295a514a07b9330442dc46"
 };
 
 // Initialize Firebase

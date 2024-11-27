@@ -15,7 +15,7 @@ const ItServicesCards = () => {
             mobile:grid-cols-2'>
             {Product.itServices.map(itService =>
                 <Card key={itService.id}>
-                    <Link to={`/itService/${itService.id}`}>
+                    <Link to={`/form`}>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-xl mobile:text-base font-bold mb-1' key={itService.title}>{itService.title}</h3>
                                 <img key={itService.img} src={itService.img}/>

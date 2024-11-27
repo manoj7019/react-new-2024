@@ -14,7 +14,7 @@ const InsuranceCards = () => {
             <div className='grid grid-cols-5 laptop:grid-cols-5 tablet:grid-cols-3 mobile:grid-cols-2'>
             {Product.insurances.map(insurance =>
                 <Card key={insurance.id}>
-                    <Link to={`/insurance/${insurance.id}`}>
+                    <Link to={`/form`}>
                             <div className='flex flex-col items-center'>
                                 <h3 className='text-xl mobile:text-lg font-bold mb-1' key={insurance.title}>{insurance.title}</h3>
                                 <img key={insurance.img} src={insurance.img}/>

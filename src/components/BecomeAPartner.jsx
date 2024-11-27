@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import IndPartnerForm from './Partner/IndPartnerForm'
-import IndPartnerDocs from './Partner/IndPartnerDocs'
-import CompPartnerForm from './Partner/CompPartnerForm'
-import CompPartnerDocs from './Partner/CompPartnerDocs'
+// import IndPartnerForm from './Partner/IndPartnerForm'
+import LoanDetailsForm from './Form'
+// import IndPartnerDocs from './Partner/IndPartnerDocs'
+// import CompPartnerForm from './Partner/CompPartnerForm'
+// import CompPartnerDocs from './Partner/CompPartnerDocs'
 import { Link } from 'react-router-dom'
 
 
@@ -31,8 +32,7 @@ const BecomeAPartner = () => {
       </button>
       { showIndividual &&
       <>
-        <IndPartnerForm />
-        <IndPartnerDocs />
+        <LoanDetailsForm />
         <Link to='/success'>
           <button className='laptop:m-10 mobile:m-10 bg-blue-500 laptop:mx-auto mobile:mx-20 px-10 py-2 text-white text-2xl rounded-3xl font-medium'> Proceed </button>
         </Link>
@@ -45,8 +45,7 @@ const BecomeAPartner = () => {
       onClick={handleSetShowCompany}>Partner as <b>Company</b></button>
       { showCompany &&
       <>
-        <CompPartnerForm />
-        <CompPartnerDocs />
+        <LoanDetailsForm />
         <Link to='/success'>
           <button className='laptop:m-10 mobile:m-10 bg-blue-500 laptop:mx-auto mobile:mx-20 px-10 py-2 text-white text-2xl rounded-3xl font-medium'> Proceed </button>
         </Link>
