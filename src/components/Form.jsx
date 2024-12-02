@@ -9,6 +9,7 @@ const LoanDetailsForm = () => {
             Email: '',
             Phone: '',
             PermanentCity: '',
+            Reason: ''
         }
     )
 
@@ -29,7 +30,7 @@ const LoanDetailsForm = () => {
     console.log(user);
 
     const getData = async (e) => {
-        const {FullName, Email, Phone, PermanentCity
+        const {FullName, Email, Phone, PermanentCity, Reason
             } = user;
         e.preventDefault();
         const options = {
@@ -38,7 +39,7 @@ const LoanDetailsForm = () => {
                 'Content-Type' : 'application/json'
             },
             body: JSON.stringify({
-                FullName, Email, Phone, PermanentCity
+                FullName, Email, Phone, PermanentCity, Reason
             })
         }
         const res = await fetch(
@@ -56,42 +57,51 @@ const LoanDetailsForm = () => {
         <div>
             <div className='flex flex-col justify-between gap-10 laptop:m-10 mt-44 mobile:m-0'>
                 <h1 className='text-4xl font-bold m-5 mt-20 mb-0'>Fill the details below :</h1>
-                <form method='POST'>
+                <form method='POST' action='' onSubmit={getData}>
                     {/* <h2 className='text-2xl font-bold ml-5'>Fill the details below :</h2> */}
                     <div  className='m-5 grid laptop:grid-cols-4 laptop:gap-6 tablet:grid-cols-2 tablet:gap-5 mobile:grid-cols-1 mobile:gap-2'>
                         <div className='flex flex-col'>
                             <p>Name as per Aadhaar :</p>
-                            <input className='my-2 p-2 border border-black'
+                            <input required className='my-2 p-2 border border-black'
                             type='text' name='FullName' placeholder='Name as per Aadhar' 
                             value={user.FullName}
-                            onChange={data} required>
+                            onChange={data}>
                             </input>
                         </div>
 
                         <div className='flex flex-col'>
                             <p>Email ID :</p>
-                            <input className='my-2 p-2 border border-black'
+                            <input required className='my-2 p-2 border border-black'
                             type='text' name='Email' placeholder='Email' 
                             value={user.Email}
-                            onChange={data} required>
+                            onChange={data}>
                             </input>
                         </div>
 
                         <div className='flex flex-col'>
                             <p>Phone Number :</p>
-                            <input className='my-2 p-2 border border-black'
+                            <input required className='my-2 p-2 border border-black'
                             type='text' name='Phone' placeholder='Phone' 
                             value={user.Phone}
-                            onChange={data} required>
+                            onChange={data}>
                         </input>
                         </div>
 
                         <div className='flex flex-col'>
                             <p>City :</p>
-                            <input className='my-2 p-2 border border-black'
+                            <input required className='my-2 p-2 border border-black'
                             type='text' name='PermanentCity' placeholder='City'
                             value={user.PermanentCity}
-                            onChange={data} required>
+                            onChange={data}>
+                            </input>
+                        </div>
+
+                        <div className='flex flex-col laptop:w-full mobile:w-full'>
+                            <p>Reason for Contacting:</p>
+                            <input required className='my-2 h-28 p-0 border border-black'
+                            type='text' name='Reason' placeholder=''
+                            value={user.Reason}
+                            onChange={data}>
                             </input>
                         </div>
                     </div>

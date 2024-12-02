@@ -16,7 +16,7 @@ const Footer = () => {
                     src={logoWhite}
                     />
                 </Link>
-                <p className=''>971/3, 3rd Floor, A sector, 3rd Phase, 13th cross, Opp to KHB High Rise Apartment, Yelahanka , Bengaluru Urban, Karnataka - 560064</p>
+                <p className=''>No.477/139/130/8, 1st floor, Ward No.19, B B road, Devanahalli, Bengaluru, Karnataka -562110</p>
             </div>
             <div className='mobile:hidden laptop:flex justify-between gap-20 border rounded-xl px-10 py-5'>
                 <div className='flex flex-col'>
