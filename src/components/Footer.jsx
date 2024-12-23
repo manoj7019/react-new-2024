@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-col gap-10'>
-                    <div className='flex flex-col'>
+                    {/* <div className='flex flex-col'>
                         <Link to='/itServices'>
                             <h2 className='text-2xl font-bold mb-1 hover:underline'>IT Services</h2>
                         </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
                             <p key={itService.id} className='hover:underline'>{itService.title}</p>
                         </Link>
                         )}
-                    </div>
+                    </div> */}
                     <div className='flex flex-col'>
                         <Link to='/realEstate'>
                             <h2 className='text-2xl font-bold mb-1 hover:underline'>Real Estate</h2>
