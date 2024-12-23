@@ -58,9 +58,9 @@ const Navbar = () => {
                 <NavLink to='/insurance' className={linkClass}>
                     Insurance
                 </NavLink>
-                <NavLink to='/itServices' className={linkClass}>
+                {/* <NavLink to='/itServices' className={linkClass}>
                     IT Services
-                </NavLink>
+                </NavLink> */}
                 <NavLink to='/realEstate' className={linkClass}>
                     Real Estate
                 </NavLink>
@@ -96,9 +96,9 @@ const Navbar = () => {
                     <NavLink onClick={handleSetShowDropdown} to='/insurance' className={linkClass}>
                         Insurance
                     </NavLink>
-                    <NavLink onClick={handleSetShowDropdown} to='/itServices' className={linkClass}>
+                    {/* <NavLink onClick={handleSetShowDropdown} to='/itServices' className={linkClass}>
                         IT Services
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink onClick={handleSetShowDropdown} to='/realEstate' className={linkClass}>
                         Real Estate
                     </NavLink>

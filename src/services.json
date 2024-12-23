@@ -19,12 +19,6 @@
             "img" : "/insurance.png"
         },
         {
-            "id" : "itServices",
-            "title" : "IT Services",
-            "para" : "Explore Loans",
-            "img" : "/itServices.png"
-        },
-        {
             "id" : "realEstate",
             "title" : "Real Estate",
             "para" : "Explore Loans",
